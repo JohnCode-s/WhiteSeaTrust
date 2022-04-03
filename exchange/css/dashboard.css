@@ -1,0 +1,1701 @@
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Poppins;
+}
+
+body {
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  /*height: 600px;*/
+  overflow-x: hidden;
+}
+
+li,
+a {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 28px;
+}
+
+.errorlist {
+  margin: 0px;
+  padding-left: 8px;
+  list-style: none;
+  /*margin-top: -24px;*/
+}
+
+.errorlist li,
+a {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ef1414;
+  text-decoration: none;
+  margin-right: 28px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px, 10%;
+  background-color: black;
+  border-radius: 0 0 18px 18px;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 13000;
+  top: 0;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.nav_links {
+  list-style: none;
+  max-height: 100%;
+  height: 100%;
+}
+
+.logo {
+  position: relative;
+  left: 70px;
+  top: 9px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.pop-receipt {
+  position: relative;
+  left: 0px !important;
+  z-index: 1000;
+  background: white;
+  border-radius: 20px;
+  max-width: 750px;
+  width: 100%;
+  margin: auto;
+}
+
+.pop-receipt-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#trans_details_pending,
+#trans_details_complete,
+#trans_details_failed {
+  max-width: 350px;
+  width: 100%;
+}
+
+.pop-receipt-info {
+  background: #fafafa;
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.pop-receipt-keys {
+  width: 50%;
+  padding: 20px;
+}
+
+.pop-receipt-keys > p {
+  text-align: left;
+  font-family: Poppins;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px !important;
+  color: #828282 !important;
+  line-height: 10px;
+}
+
+.pop-receipt-values {
+  width: 50%;
+  text-align: right;
+  padding: 20px;
+}
+
+.pop-receipt-values > p {
+  font-family: Poppins;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  color: #1a1a1a !important;
+  line-height: 10px;
+}
+
+.pop-receipt-close-icon {
+  color: #434343;
+  cursor: pointer;
+  font-size: 23px;
+  margin-left: 90%;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 40px;
+  width: 30px;
+  text-align: center;
+}
+
+.pop-receipt-info .order-info-values {
+  line-height: 12px;
+}
+
+.pop-receipt-info .order-info-keys > p,
+.order-info-values > p {
+  font-size: 14px !important;
+}
+
+.shadow {
+  position: fixed;
+  z-index: 900;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+}
+
+.removeEffect {
+  display: none;
+}
+
+.submit-prove {
+  width: 550px;
+  margin-left: -50px;
+  /*border: 1px solid;
+border-color: wheat;
+border-radius: 16px;
+height: 65px;*/
+}
+
+#pasteAcct {
+  font-size: 15px;
+  padding-right: 90px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 0px;
+}
+
+.nav_links li a:hover {
+  transition: all 0.3s ease 0s;
+  color: orange;
+}
+
+/*HEADER AND NAV CSS ENDS ABOVE*/
+
+.errorlist li a {
+  color: orangered;
+}
+
+.my-action-bar {
+  text-align: center;
+  margin-top: 140px;
+}
+
+.greeting > h2 {
+  color: #1a1a1a;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  left: 100px;
+  position: absolute;
+}
+
+.greeting {
+  float: left;
+}
+
+/*Start of button CSS*/
+.action-btns {
+  position: relative;
+  max-width: 395.8px;
+  width: 100%;
+  height: 77px;
+  right: 100px;
+  top: 12px;
+  text-align: inherit;
+  float: right;
+}
+
+.action-btns > button {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+button {
+  max-width: 191.8px;
+  height: 77px;
+  top: 21px;
+  border-radius: 12px;
+  border: 1px solid #828282;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #f08b35;
+}
+
+/*Buy button styles*/
+
+#buy-btn {
+  float: right;
+  background-color: white;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+#buy-btn:hover {
+  transition: all 0.3s ease 0s;
+  background-color: gray;
+}
+
+#buy-btn > a > h3 {
+  color: #090101;
+}
+
+#buy-btn > a > h3:hover {
+  transition: all 0.3s ease 0s;
+  color: orange;
+}
+
+/*Sell button styles*/
+
+#sell-btn {
+  float: left;
+  background-color: #f08b35;
+  border: 0px;
+  color: white;
+  width: 100%;
+}
+
+#sell-btn:hover {
+  transition: all 0.3s ease 0s;
+  background-color: gray;
+}
+
+.select-files {
+  position: absolute;
+  right: 20px;
+  top: 38%;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  color: #f08b35;
+  font-size: 16px;
+}
+
+#sell-btn > h3 {
+  color: #ffffff;
+}
+
+#sell-btn > a > h3:hover {
+  transition: all 0.3s ease 0s;
+  color: black;
+}
+
+/*Transactions history css*/
+.txn-history {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  /*max-height: 598px;*/
+  top: 270px;
+  background: #fafafa;
+  border-radius: 12px 12px 0px 0px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.empty-txns {
+  margin: 100px;
+  /*padding-left: 10px;*/
+}
+
+/*
+.empty-txns>h3{
+position: absolute;
+width: 246px;
+height: 26px;
+left: calc(50% - 246px/2);
+bottom: 200px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+text-align: center;
+color: #1A1A1A;	
+}
+
+.empty-txns>p{
+position: absolute;
+width: 369px;
+height: 22px;
+left: 500px;
+top: 367px;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+color: #828282;
+}
+*/
+
+/*Dashboard_txn Css*/
+.my-txns {
+  top: 50px;
+  /*padding-left: 100px;
+	padding-right: 100px;*/
+  background-color: #fafafa;
+}
+
+.my-txns > h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.txns {
+  height: 97px;
+  cursor: pointer;
+  border-bottom: 1px solid #e9e2e2;
+  padding-right: 105px;
+  padding-left: 102px;
+  display: none;
+}
+
+.txns:hover {
+  background-color: lightgray;
+}
+
+.txns-order {
+  float: left;
+  height: 97px;
+  text-align: left;
+}
+
+#Bogt {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+#cost {
+  font-family: Poppins;
+  font-style: normal;
+  /*font-weight: bold;*/
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+#currency {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #828282;
+}
+
+.order-header {
+  /*left: calc(-10% - 246px/2);*/
+  position: relative;
+  line-height: 1px;
+  /*padding-left: calc(50% - 246px/2);*/
+}
+
+.order-stamp {
+  float: right;
+  height: 97px;
+  text-align: right;
+}
+
+.order-stamp > h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.order-stamp > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #828282;
+}
+
+.status-red {
+  color: #eb5757;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.status-green {
+  color: #27ae60;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.status-orange {
+  color: #f2c94c;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.more > h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 135%;
+  color: #828282;
+}
+
+.more > h3:hover {
+  transition: all 0.3s ease 0s;
+  color: orange !important;
+}
+
+/*For pop up reciepts*/
+.failed {
+  margin-top: 900px;
+  margin-left: 30%;
+  background: #ffffff;
+  width: 400px;
+  border-radius: 16px;
+  border: 2px solid #eb5757;
+}
+
+.complete {
+  margin-top: 20px;
+  margin-left: 30%;
+  background: #ffffff;
+  width: 400px;
+  border-radius: 16px;
+  border: 2px solid #27ae60;
+}
+
+.pending {
+  margin-top: 20px;
+  margin-left: 30%;
+  background: #ffffff;
+  width: 400px;
+  border-radius: 16px;
+  border: 2px solid #f2c94c;
+}
+
+.image_stat {
+  display: block !important;
+  text-align: center;
+  margin: 200px 0 0 0;
+}
+
+.image_stat img {
+  margin-top: 30px;
+  height: 120px;
+  width: 120px;
+}
+
+.trans_info {
+  margin-top: 30px;
+  padding: 0 40px !important;
+  box-sizing: border-box;
+}
+
+.trans_info > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800 !important;
+  font-size: 22px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.time_stat {
+  margin-top: 10px;
+  text-align: center;
+  padding: 20px 0 30px;
+}
+
+.time_stat > span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+/*For Buy and Sell Form*/
+
+#go_back {
+  color: #828282;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 102px;
+  top: 141px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid #828282;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 30px;
+  background: url("/static/Images/back%20arrow%20black.svg") no-repeat center;
+}
+
+#go_back:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #ff9940;
+}
+
+.top_words {
+  position: relative;
+  text-align: center;
+  top: 150px;
+  cursor: pointer;
+}
+
+.order-form {
+  position: absolute;
+  width: 495.6px;
+  height: 550px;
+  /*left: 472px;*/
+  left: calc(40% - 246px / 2);
+  top: 283px;
+}
+
+#usd-ngn {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#coin_type {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 18px;
+  width: 495.6px;
+  height: 65px;
+  padding-right: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 0 20px !important;
+  line-height: 24px !important;
+  margin-bottom: 30px !important;
+}
+
+#amnt_dols {
+  padding-top: 50px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 18px;
+  background-color: red;
+  width: 495.6px;
+  height: 65px;
+  font-size: 18px !important;
+}
+
+#equiv {
+  margin-bottom: 30px !important;
+}
+
+#buy-but,
+#sell-but {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 42px;
+  color: #1a1a1a;
+}
+
+#coin_network {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 18px;
+  position: relative;
+  width: 495.6px;
+  height: 65px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 0 20px !important;
+  line-height: 24px !important;
+  margin-bottom: 30px !important;
+}
+
+#wall_addr {
+  margin-bottom: 30px !important;
+  /*text-align: right;*/
+  right: 10px;
+}
+
+#bank-name {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 18px;
+  position: relative;
+  width: 495.6px;
+  height: 65px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1a1a;
+}
+
+.empty-txns > h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+}
+
+input[type="file"] {
+  opacity: 0;
+  width: 70px;
+  position: absolute;
+  right: -0;
+  top: 0;
+  cursor: pointer;
+}
+
+/* NUMBER INPUT APPEARANCE CHANGE */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"],
+#id_amount {
+  -moz-appearance: textfield;
+}
+
+input[type="email"] {
+  background-color: white;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #828282;
+  box-shadow: none;
+  height: 65px;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f08b35;
+}
+
+select {
+  background: url("/static/Images/drop%20down.svg") no-repeat right #ddd0;
+  -webkit-appearance: none;
+  background-position-x: 96%;
+  background-color: white;
+  background-position-y: 52%;
+}
+
+#coin_type,
+#bank-name,
+#coin_network {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 16px;
+  /*s*/
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  color: #828282;
+}
+
+#proceed {
+  position: relative;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  max-width: 495px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  top: 30px;
+  width: 100%;
+  background: url("/static/Images/forward%20arrow.svg") no-repeat right #e0e0e0;
+  background-position-x: 92%;
+}
+
+#proceed:hover {
+  opacity: 0.8;
+  background-color: #f08b35;
+}
+
+#proceed-sell {
+  position: relative;
+  color: #ffffff;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  max-width: 495px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  top: 30px;
+
+  background: url("/static/Images/forward%20arrow.svg") no-repeat right #e0e0e0;
+  background-position-x: 92%;
+}
+
+#proceed-sell:hover {
+  opacity: 0.8;
+  background-color: #f08b35;
+}
+
+/*Comfirmation CSS*/
+
+.confirmation {
+  text-align: center;
+  position: relative;
+  top: 185px;
+}
+
+.order-header > h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 73.6px;
+  color: #f08b35;
+  margin-bottom: 0;
+}
+
+#payment-type {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #828282;
+  top: 10px !important;
+}
+
+.confirmation > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1a1a;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#sell_form_btn {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+#buy-form-btn {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.order-info {
+  /*position: relative;*/
+  width: 610px;
+  height: 222px;
+  /*left: 361.5px;*/
+  background: #fafafa;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.order-info-no-memo {
+  height: 180px;
+}
+
+.order-info-values > p,
+.payment_add {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.order-info-values {
+  float: right;
+  text-align: right;
+  line-height: 15px;
+  padding: 27px;
+}
+
+.order-info-keys {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #828282;
+  float: left;
+  text-align: left;
+  line-height: 12px;
+  padding: 27px;
+}
+
+.submit-prove {
+  /*position: absolute;
+    left: 33%;*/
+  position: relative;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.confirmation-btn {
+  text-align: left;
+  max-width: 522px;
+  margin: auto;
+}
+
+.confirmation-btn-sell {
+  top: 0px !important;
+}
+
+.confirmation-btn > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  color: #828282;
+  width: 100%;
+  margin: 34px;
+  text-align: left;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 135%;
+  /* or 16px */
+
+  /* Gray 3 */
+
+  color: #828282;
+}
+
+.payment_add {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.submit-proof-form {
+  /*position: relative;*/
+  margin-bottom: 200px;
+  margin-top: 30px;
+}
+
+#ref_withdrawl_btn {
+  max-width: 495.6px;
+  border: 0px;
+  margin-bottom: 145px;
+  margin-top: 30px;
+  width: 100%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  color: white;
+}
+
+.confirmation-msg {
+  margin: auto;
+  width: 541px;
+}
+
+.confirmation-msg-buy {
+  width: 607px;
+}
+
+#check-btn {
+  /*position: absolute;*/
+  float: left;
+  width: 15px;
+  height: 16px;
+  border: 1px solid #434343;
+  box-sizing: border-box;
+  border-radius: 2px;
+  left: calc(39% - 246px / 2);
+}
+
+.terms-condition {
+  width: 550px;
+  /*position: relative;*/
+  left: 32%;
+  top: 0%;
+  text-align: left;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+}
+
+.terms-condition-buy {
+  width: 100% !important;
+}
+
+.btnn {
+  background-color: #f08b35;
+  padding: 2px 35px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 550px;
+  position: inherit !important;
+}
+
+.c-active {
+  border: none;
+  height: 6px;
+  position: absolute;
+  top: 47px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #ff9940;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.wrd h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+}
+
+.support_pg {
+  max-width: 495.6px;
+  text-align: left;
+  margin: auto;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+.wrd {
+  text-align: center;
+  padding: 20px;
+}
+
+.wrd p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 115%;
+}
+
+textarea {
+  width: 94%;
+  height: 200px;
+  border: 1px solid #828282;
+  border-radius: 16px;
+  display: inline-block;
+  margin-top: 10px;
+  resize: none;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  color: #828282;
+  padding: 15px;
+  -webkit-appearance: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #f08b35;
+}
+
+.button {
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  /*line-height: 70px;*/
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 100px;
+  position: relative;
+  /*left: 30%;*/
+  max-width: 495px;
+  width: 100%;
+  height: 77px;
+}
+
+.button:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #f08b35;
+}
+
+.profile-btn {
+  background-color: #f08b35;
+}
+
+.profile-btn:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #f08b35;
+}
+
+#refer-earn-text {
+  font-size: 24px;
+  padding-top: 35px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 135%;
+  text-align: center;
+}
+
+.referral-info {
+  max-width: 610px;
+  width: 100%;
+  height: 250px;
+  background: #fafafa;
+  border-radius: 12px;
+  font-family: Poppins, san serif;
+  font-size: 20px;
+  line-height: 5px;
+  text-align: center;
+  /*position: absolute;
+left: 27%;*/
+  /*top: 60%;*/
+  /*transform: translate(-50%, -50%);*/
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 250px;
+}
+
+.referral-info-keys {
+  float: left;
+  padding-left: 4%;
+  text-align: left;
+  padding-top: 6px;
+  color: #828282;
+}
+
+.referral-info-values {
+  float: right;
+  text-align: right;
+  padding-right: 4%;
+}
+
+.referral-info-values > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.withdrawl_btn {
+  position: relative;
+  top: 85px;
+  border: 0px;
+  color: white;
+  max-width: 400px;
+  width: 100%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /*left: 15%;*/
+}
+
+.withdrawal_pg {
+  max-width: 495.6px;
+  text-align: left;
+  margin: auto;
+  margin-top: 110px;
+  padding: 30px;
+}
+
+.withdrawl_btn:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #f08b35;
+}
+
+.proceed-arrow {
+  position: absolute;
+  right: 20px;
+  font-size: 40px;
+  top: 14px;
+}
+
+/* user profile css */
+
+.wrapper {
+  max-width: 495.6px;
+  margin: auto;
+  margin-top: auto;
+  /*margin-top: 50px;*/
+  /*padding: 30px;*/
+}
+
+.body-container {
+  width: 100%;
+  text-align: center;
+}
+
+.body-container > h2 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.my-profile {
+  padding-top: 20px;
+  margin-top: 100px;
+}
+
+.my-profile > h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 115%;
+}
+
+.my-trades > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 135%;
+}
+
+.buy_error {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: red;
+  line-height: 1px;
+}
+
+.buy_warning {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: red;
+  margin-top: -19px;
+}
+
+#profile_bank_name,
+#verification_method {
+  width: 100%;
+  height: 65px;
+  border-radius: 16px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #828282;
+  box-shadow: none;
+}
+
+#id_Account_number {
+  -webkit-appearance: textfield !important;
+}
+
+#holder {
+  text-align: center;
+  padding: 8%;
+  margin-top: 105px;
+}
+
+.email_tag {
+  padding-bottom: 5%;
+}
+
+#msg1 > h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+#confirmation-success {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 135%;
+  text-align: center;
+}
+
+.referral_balance {
+  margin-top: 220px;
+}
+
+.referral_balance > h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 0;
+  color: #f08b35;
+}
+
+.referral_balance > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 0;
+  text-align: center;
+  color: #828282;
+}
+
+.referral_text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #d52929;
+  line-height: 118%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.referral_div_text {
+  position: relative;
+  top: 296px;
+  left: -5%;
+}
+
+.invalid_bvn {
+  border: 1px solid #ea1515 !important;
+}
+
+.valid-bvn {
+  border: 1px solid #828282;
+}
+
+.pending_bvn {
+  border: 1px solid #f08b35 !important;
+}
+
+.reveal-warning {
+  color: red;
+  margin-top: -3px;
+  padding: 1px;
+  font-size: 15px;
+}
+
+.reveal-warning-pending {
+  color: #f08b35;
+  margin-top: -3px;
+  padding: 1px;
+  font-size: 15px;
+}
+
+.hide-warning {
+  display: none;
+}
+
+.unverified-text {
+  position: relative;
+  width: 46%;
+  left: 27%;
+}
+
+#id_dob {
+  -webkit-appearance: none;
+  background-color: white;
+}
+
+.select-image {
+  position: relative;
+  top: -51px;
+  left: 83%;
+  color: #f08b35;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  color: #f08b35;
+  font-size: 16px;
+}
+
+.coming-soon-img {
+  float: right;
+  left: -204px; /*-218px;*/
+  position: relative;
+  top: 7px;
+  height: 33px;
+}
+
+.display-rate {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 135%;
+  /* ? or 16px */
+
+  text-align: right;
+
+  /* Gray 3 */
+
+  color: #828282;
+}
+
+.confirmation-buy-form {
+  margin: auto;
+  margin-top: 30px;
+  padding-bottom: 100px;
+}
+
+.reduce-referral-id {
+  width: 108px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.small-note {
+  height: 100px !important;
+}
+
+#terms_and_conditions {
+  width: 522px;
+  margin: auto;
+}
+
+#terms_and_conditions > h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 115%;
+  /* or 28px */
+
+  text-align: center;
+
+  /* Main colour/Light theme */
+
+  color: #f08b35;
+}
+
+.terms_and_conditions_sell {
+  top: 10px !important;
+}
+
+#terms_and_conditions_agreement_btn {
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  max-width: 495px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  top: 30px;
+  width: 100%;
+  background: url("/static/Images/forward%20arrow.svg") no-repeat right #e0e0e0;
+  background-position-x: right;
+  background-position-x: 92%;
+}
+
+.info-tag {
+  width: 100%;
+  max-width: 96px;
+  height: 96px;
+  margin: auto;
+  margin-bottom: 53px;
+}
+
+.activate-btn {
+  background-color: #f08b35 !important;
+}
+
+.order_text {
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 135%;
+}
+
+.default-acct-det p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1a1a;
+}
+
+/*#report_txn_form{
+display: none;
+max-width: 455px;
+width: 100%;
+height: 100%;
+padding: 100px;
+
+}
+
+#report_txn_form form{
+max-width: 455px;
+width: 50%;
+margin:auto;
+}
+
+
+#report_txn_form form textarea{
+width: 93%;
+height: 100%;
+margin: 100px 0px 0px;
+}
+*/
+
+/*
+NACBOTICS COPY FROM HERE
+*/
+#report_txn_form {
+  display: none;
+  /*max-width: 455px;*/
+  width: 100%;
+  height: 100%;
+}
+
+.refund_form {
+  width: 90% !important;
+  margin: auto;
+}
+
+.refund_form input,
+.refund_form select {
+  max-width: 450px !important;
+  width: 100% !important;
+  margin-bottom: 20px !important;
+}
+
+#buy-refund-form,
+#Sell-refund-form {
+  margin: 25px auto;
+}
+
+.refund_form_container {
+  line-height: 14px;
+  max-width: 450px;
+  margin: auto;
+  padding: 100px 0px;
+}
+
+.refund_form_container h2 {
+  font-size: 22px;
+  font-weight: 800 !important;
+  color: #ff9940;
+  text-align: center;
+}
+
+.refund_form_container p {
+  font-size: 12px;
+  font-weight: 406;
+  color: red;
+  text-align: center;
+}
+
+.refund_form_container label {
+  text-align: left;
+}
+
+#report_txn_form form textarea {
+  width: 93%;
+  height: 100%;
+  margin: 100px 0px 0px;
+}
+
+/*NACBOTICS STOP*/
+
+.ticket_pg {
+  max-width: 90%;
+  margin: auto;
+}
+
+.txn-ticket {
+  max-width: 500px;
+  max-height: 130px;
+  background: red;
+  border-radius: 12px;
+  height: 100%;
+  padding: 40px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ticket-status {
+  max-width: 90px;
+  width: 100%;
+}
+
+.ticket-status img {
+  width: 100%;
+}
+
+.MyTickets > h2 {
+  color: #1a1a1a;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.ticket-container {
+  width: 60%;
+  margin: 100px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.ticket-title {
+  margin: auto;
+  width: 80%;
+}
+
+.ticket-title h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800 !important;
+  font-size: 22px;
+  text-align: center;
+  color: #ff9940;
+}
+
+.ticket-body {
+  margin-bottom: 50px;
+}
+
+.separation-bar {
+  width: 100%;
+  background: #ff9940;
+  padding: 2px;
+  border-radius: 40px;
+}
+
+#resolved_ticket_pop,
+#pending_ticket_pop {
+  display: none;
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="PRAGMA" content="NO-CACHE" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="../assets/image/project.jpg" />
+    <link href="css/dashboard.css" rel="stylesheet" />
+    <link href="css/responsive_dashboard.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:normal,100,200,300,400,500,600"
+      rel="stylesheet"
+    />
+    <title>Velox - My Dashboard</title>
+  </head>
+  <body style="overflow-x: hidden; height: 100%">
+    <div class="body-container">
+      <div class="shadow removeEffect"></div>
+      <header>
+        <a href="/"><img class="logo" src="../assets/image/project.jpg" /></a>
+        <nav class="slide-content" id="sidebar-nav">
+          <ul class="nav_links">
+            <li style="position: relative">
+              <span class="c-active"></span
+              ><a href="/exchange/dashboard/ ">Dashboard</a>
+            </li>
+            <li><a href="/exchange/refer-earn/">Refer and Earn</a></li>
+            <li><a href="/accounts/profile/">Profile</a></li>
+
+            <li><a href="/accounts/logout/">Sign out</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-mobile" id="menu-ico" onclick="showMenu()">
+          <a id="navbar-toggle">
+            <span></span>
+          </a>
+        </div>
+        <div class="nav-mobile" onclick="HideMenu()">
+          <a id="close-ico" href="#" class="close-nav"></a>
+        </div>
+      </header>
+
+      <div class="my-action-bar">
+        <div class="greeting">
+          <!-- <h2>Welcome, Ifeanyichukwu</h2> -->
+          <h2><span id="user-grees">Welcome,</span> John</h2>
+        </div>
+
+        <div class="action-btns">
+          <button
+            id="sell-btn"
+            onclick="window.location.href='/exchange/sell/';"
+          >
+            Sell
+          </button>
+          <button id="buy-btn" onclick="window.location.href='/exchange/buy/';">
+            Buy
+          </button>
+        </div>
+      </div>
+
+      <div class="txn-history">
+        <div class="my-txns">
+          <h3>Transaction History</h3>
+
+          <div class="empty-txns">
+            <img class="no-txns" src="../assets/image/project.jpg" />
+            <h3 id="no_txn">No transaction History</h3>
+            <p>Don’t just make this place look empty. Trade!!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="report_txn_form" class="pop-receipt">
+      <span id="close_form" class="pop-receipt-close-icon">&#10005;</span>
+
+      <div class="refund_form_container">
+        <h2>Request for refund</h2>
+        <p>Make sure the details are the same with the senders details</p>
+
+        <div id="buy-refund-form" class="removeEffect">
+          <form
+            class="content refund_form"
+            method="post"
+            action="/exchange/cancel_order"
+          >
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="DWn1lI3yIIrstxeQxOKbbzGOwHbieYQHX7Ux2DGUG0YQGdwJpTILp6njUMQCTHX6"
+            />
+            <input
+              type="hidden"
+              name="txn_id"
+              required=""
+              id="txn_buy_id"
+              value=""
+            />
+            <label>Bank name</label>
+            <select name="Bank_name" id="bank-name" required>
+              <option value="" selected>Please select your bank</option>
+
+              <option value="ACCESS BANK">ACCESS BANK</option>
+
+              <option value="GT-BANK">Guaranty Trust Bank</option>
+
+              <option value="UBA">UNITED BANK FOR AFRICA</option>
+
+              <option value="Union bank">Union Bank of Nigeria</option>
+
+              <option value="First bank">First Bank of Nigeria</option>
+
+              <option value="FCMB">First City Monument Bank</option>
+
+              <option value="Fidelity Bank">Fidelity Bank</option>
+
+              <option value="Zenith Bank">Zenith Bank</option>
+
+              <option value="Heritage Bank">Heritage Bank</option>
+
+              <option value="Citibank Nigeria">Citibank Nigeria</option>
+
+              <option value="Keystone Bank">Keystone Bank</option>
+
+              <option value="Polaris Bank">Polaris Bank</option>
+
+              <option value="Stanbic IBTC Bank">Stanbic IBTC Bank</option>
+
+              <option value="Standard Chartered">Standard Chartered</option>
+
+              <option value="Kuda Microfinance">Kuda Microfinance</option>
+
+              <option value="Sterling Bank">Sterling Bank</option>
+
+              <option value="Titan Trust Bank">Titan Trust Bank</option>
+
+              <option value="Unity Bank">Unity Bank</option>
+
+              <option value="Wema Bank">Wema Bank</option>
+
+              <option value="VFD Bank">VFD Bank</option>
+            </select>
+
+            <label>Account name</label>
+            <input
+              type="text"
+              name="Account_name"
+              id="wall_addr"
+              placeholder="Account name"
+              maxlength="120"
+              required
+            />
+
+            <label>Account number</label>
+            <input
+              type="text"
+              name="Account_number"
+              placeholder="Account number"
+              name="acct-num"
+              maxlength="120"
+              required
+              id="id_Account_number"
+            />
+            <br />
+
+            <button
+              id="txn_report_btn"
+              class="button"
+              style="background: rgb(224, 224, 224)"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <div id="Sell-refund-form" class="removeEffect">
+          <form
+            class="content refund_form"
+            method="post"
+            action="/exchange/cancel_order"
+          >
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="DWn1lI3yIIrstxeQxOKbbzGOwHbieYQHX7Ux2DGUG0YQGdwJpTILp6njUMQCTHX6"
+            />
+            <input
+              type="hidden"
+              name="txn_id"
+              required=""
+              id="txn_sell_id"
+              value=""
+            />
+
+            <div id="my_coin_network">
+              <label>Network</label>
+              <select name="network" id="coin_network" class="buy_network">
+                <option value="" selected>Select coin network</option>
+
+                <option value="BEP-20">BEP-20</option>
+
+                <option value="BTC">BTC</option>
+
+                <option value="ERC-20">ERC-20</option>
+
+                <option value="TRC-20">TRC-20</option>
+
+                <option value="LTC">LTC</option>
+
+                <option value="XRP">XRP</option>
+
+                <option value="BEP-2">BEP-2</option>
+
+                <option value="DOGE">DOGE</option>
+
+                <option value="Bitcoin Cash">Bitcoin Cash</option>
+
+                <option value="SOL">SOL</option>
+              </select>
+            </div>
+
+            <label>Wallet Address</label>
+            <input
+              type="text"
+              name="wallet_address"
+              id="wall_addr"
+              placeholder="Wallet addresss"
+              maxlength="120"
+              required
+            />
+
+            <br />
+            <label>Memo</label>
+            <input
+              type="text"
+              name="memo"
+              id="wall_addr"
+              placeholder="Memo"
+              maxlength="120"
+            />
+
+            <button
+              id="txn_report_btn"
+              class="button"
+              style="background: rgb(224, 224, 224)"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="canceledTransaction" class="pop-receipt removeEffect">
+      <span id="close_canceled" class="pop-receipt-close-icon">&#10005;</span>
+
+      <div class="pop-receipt-details">
+        <div>
+          <span class="image_stat">
+            <img src="/static/Images/Group%2028.png" />
+          </span>
+          <div class="trans_info">
+            <p>Transaction Canceled!</p>
+          </div>
+        </div>
+
+        <div id="trans_details_canceled" class="pop-details-div"></div>
+      </div>
+    </div>
+
+    <div id="fialedTransaction" class="pop-receipt removeEffect">
+      <span id="close_failed" class="pop-receipt-close-icon">&#10005;</span>
+
+      <div class="pop-receipt-details">
+        <div>
+          <span class="image_stat">
+            <img src="/static/Images/Group%2029.png" />
+          </span>
+          <div class="trans_info">
+            <p>Transaction Failed!</p>
+          </div>
+        </div>
+
+        <div id="trans_details_failed" class="pop-details-div"></div>
+      </div>
+    </div>
+
+    <div id="completeTransaction" class="pop-receipt removeEffect">
+      <span id="close_complete" class="pop-receipt-close-icon">&#10005;</span>
+
+      <div class="pop-receipt-details">
+        <div>
+          <span class="image_stat">
+            <img src="/static/Images/Group%2030.png" />
+          </span>
+          <div class="trans_info">
+            <p>Transaction Completed!</p>
+          </div>
+        </div>
+
+        <div id="trans_details_complete" class="pop-details-div"></div>
+      </div>
+    </div>
+
+    <div id="pendingTransaction" class="pop-receipt removeEffect">
+      <span id="close_pending" class="pop-receipt-close-icon">&#10005;</span>
+
+      <div class="pop-receipt-details">
+        <div>
+          <span class="image_stat">
+            <img src="/static/Images/Group%2031.png" />
+          </span>
+          <div class="trans_info">
+            <p>Transaction Pending!</p>
+          </div>
+        </div>
+
+        <div id="trans_details_pending" class="pop-details-div"></div>
+      </div>
+    </div>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/nav.js"></script>
+    <!-- load more javascript -->
+
+    <script type="text/javascript">
+      $(function () {
+        $(".txns").slice(0, 5).show();
+        $("#loadMore").on("click", function (e) {
+          e.preventDefault();
+          $(".txns:hidden").slice(0, 5).slideDown();
+          if ($(".txns:hidden").length == 0) {
+            $("#load").fadeOut("slow");
+          }
+          $("html,body").animate(
+            {
+              scrollTop: $(this).offset().top,
+            },
+            1500
+          );
+        });
+      });
+
+      $("#txn_report_details").on("input", function () {
+        if ($("#txn_report_details").val() != "") {
+          $("#txn_report_btn").css({ background: "#FF9940" });
+        } else {
+          $("#txn_report_btn").css({ background: "#E0E0E0" });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,2884 @@
+
+@media screen and  (max-width: 1260px){
+
+.order-info{
+left: 310.5px;
+}
+
+/*.submit-prove{
+left: 390px;
+}*/
+
+/*.confirmation-msg{
+position: relative;
+    left: -3%;
+}*/
+
+
+/*.submit-proof-form{
+left: 3%;
+}*/
+
+/*.submit-form-sell{
+left: 0%;
+}*/
+
+}
+
+
+@media screen and  (max-width:1200px)  {
+
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 11px;
+    text-align: left;
+}
+
+.referral-info{
+left: 21%;
+}
+
+.order-info{
+left: 270.5px;
+}
+
+
+.submit-proof-form{
+left: -90px;
+}
+
+.confirmation-btn{
+left: 7%;
+}
+
+.submit-prove {
+    left: 0% !important;
+}
+
+.coming-soon-img{
+right: -8px;
+left: auto;
+}
+
+
+}
+
+@media screen and  (max-width: 1150px){
+
+.submit-prove {
+    left: 450px;
+}
+
+.confirmation-btn {
+    left: 9%;
+}
+
+}
+
+@media screen and   (max-width: 1100px){
+.order-info {
+    left: 225.5px;
+}
+
+.submit-prove {
+    left: 390px;
+}
+
+#check-btn{
+left: calc(41% - 246px/2);
+}
+
+.confirmation-msg{
+left: -7%;
+}
+
+
+}
+
+@media screen and  (max-width:1040px)  {
+
+
+
+body{
+max-width: 100%;
+max-height: 100%;
+/*overflow-x: hidden;*/
+}
+
+
+.greeting>h2{
+    left: 81px;
+}
+
+
+.referral-info{
+left: 19%;
+}
+
+.order-info {
+    left: 210.5px;
+}
+
+.submit-proof-form {
+    left: -150px;
+}
+
+.confirmation-btn {
+    left: 14%;
+}
+
+
+.submit-prove{
+left: 450px;
+}
+
+#confirm-btn{
+position: relative;
+    left: 0;
+    top: 30%;
+}
+
+}
+
+@media screen and  (max-width: 1010px){
+.confirmation-btn {
+    left: 18%;
+}
+
+
+.errorlist{
+margin: 0px;
+}
+
+.errorlist li, a {
+font-size: 12px;
+}
+
+}
+
+@media screen and (max-width:990px)  { 
+/* smartphones, iPhone, portrait 480x320 phones */
+
+/*---------------START HERE-------------------------------*/
+
+.nav-mobile{
+display: block;
+}
+
+
+nav{
+background: black;
+height: 100vh;
+width: 243px;
+top: 0px;
+right: -260px;
+position: fixed;
+transition: 1s;
+}
+
+nav ul{
+padding-left: 0;
+padding-top: 100px;
+}
+
+
+.nav_links li{
+display: inline-block;
+padding: 0px 11px;
+text-align: left;
+margin: 0 0 4px;
+width: 100%;
+}
+
+
+nav ul li a {
+padding: 15px;
+line-height: 20px;
+font-size: 14px !important;
+display: block !important;
+width: 100% !important;
+}
+nav ul li ul li a {
+padding-left: 30px;
+}
+
+
+.c-active{
+top: 0;
+position: absolute;
+height: 50px;
+width: 4px;
+}
+
+
+
+
+
+#navbar-toggle {
+    position: absolute;
+    right: 3px;
+    top: 28px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+    z-index: 1;
+    /*transform: translateX(-219px);*/
+}
+
+
+ #navbar-toggle span, 
+ #navbar-toggle span:before, 
+ #navbar-toggle span:after {
+     cursor: pointer;
+     border-radius: 1px;
+     height: 3px;
+     width: 30px;
+     background: #ffffff;
+     position: absolute;
+     display: block;
+     content: '';
+     transition: all 300ms ease-in-out;
+}
+
+
+#navbar-toggle span:after{
+    width: 20px;
+}
+ #navbar-toggle span:before {
+     top: -10px;
+}
+
+ #navbar-toggle span:after {
+     bottom: -10px;
+}
+ #navbar-toggle.active span {
+     background-color: transparent;
+}
+ #navbar-toggle.active span:before, #navbar-toggle.active span:after {
+     top: 0;
+}
+ /*#navbar-toggle.active span:before {
+     transform: rotate(45deg);
+}
+ #navbar-toggle.active span:after {
+     transform: rotate(-45deg);
+     width: 30px;
+}*/
+
+
+
+
+.close-nav {
+  position: absolute;
+right: 8px;
+top: 22px;
+width: 32px;
+height: 32px;
+display: none;
+}
+.close-nav:before, .close-nav:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close-nav:before {
+  transform: rotate(45deg);
+}
+.close-nav:after {
+  transform: rotate(-45deg);
+}
+
+#menu-ico{
+    z-index: -1;
+}
+
+#close-ico{
+z-index: 1;
+}
+
+
+/*my own nav bar ends here*/
+
+button{
+width: 131.8px;
+/*height: 55px;*/
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 120%;
+}
+
+
+
+h2,h3,p{
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+line-height: 120%;
+}
+
+.empty-txns>h2{
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+}
+
+
+#check-btn{
+webkit-appearance: none;
+}
+
+#go_back{
+height: 44px;
+}
+
+button>li{
+line-height: 5px;
+}
+
+
+#buy-btn,#sell-btn{
+width: 48%;
+}
+
+.desktop-nav{
+visibility: hidden;
+}
+
+
+
+.button{
+height: 55px;
+}
+
+
+.action-bar {
+margin-top: 25px;
+/*margin-right: 20px;*/
+}
+
+
+
+.action-btns{
+/*max-width: 275.8px;*/
+width: 100%;
+right: 46px;
+
+position: relative;
+top: 28px;
+padding-right: 30px;
+padding-left: 30px;
+}
+
+.greeting>h2{
+font-size: 41px;
+left: 25px;
+position: relative;
+}
+
+.greeting {
+float: none;
+text-align: None;
+position: absolute;
+left: 5%;
+}
+
+
+.container{
+padding-left: 40px;
+width: 400px;
+}
+
+
+.empty-txns > img {
+max-width: 270px;
+width: 100% !important;
+}
+
+
+.empty-txns > h3 {
+left: 0;
+top: 130px;
+/*padding-left: 30px;*/
+}
+
+.empty-txns > p {
+top: 170px;
+left: calc(10% - 246px/2);
+}
+
+
+.my-txns>h3{
+text-align: center;
+font-size: 18px;
+}
+
+.txn-history {
+height: 70%;
+/*overflow-x: hidden;*/
+}
+
+
+#Bogt{
+font-size: 14px;
+}
+
+
+#cost{
+font-size: 14px;
+}
+
+#currency{
+font-size: 12px;
+}
+
+.confirmation{
+left: -43px;
+}
+
+.order-header{
+left: calc(-6% - 246px/2);
+padding-left: calc(50% - 246px/2);
+}
+
+#pasteAcct{
+width: 100%;
+}
+
+.submit-proof-form {
+    left: -196px;
+}
+
+
+.txns {
+    height: 70px;
+}
+
+
+.txns-order {
+    height: 100%;
+}
+
+
+.order-stamp {
+    height: 100%;
+}
+
+.order-stamp>h3{
+font-size: 14px;
+}
+
+
+.order-stamp>p{
+font-size: 12px;
+}
+
+
+.status-red{
+font-size: 12px;
+}
+
+.status-green{
+font-size: 12px;
+}
+
+.status-orange{
+font-size: 12px;
+}
+
+.txns{
+padding-right: 30px;
+padding-left: 30px;
+}
+
+.more h3{
+font-size: 10px;
+}
+
+.order-form{
+padding-left: 30px;
+padding-right: 29px;
+left: calc(40% - 246px/2);
+width: 300px;
+padding-bottom: 100px;
+}
+
+.display-rate{
+position: relative;
+left: 15%;
+}
+
+
+.confirmation>p{
+position: relative;
+left: calc(12% - 246px/2);
+font-size: 14px;
+line-height: 14px;
+}
+
+
+#profile_bank_name,#verification_method{
+height: 55px;
+font-size: 14px;
+
+}
+
+
+
+#proceed {
+    top: 23px;
+    position: relative;
+    width: 350px;
+    font-size: 22px;
+    height: 55px;
+}
+
+#proceed-sell {
+   top: 30px;
+    position: relative;
+    width: 350px;
+    font-size: 22px;
+    height: 55px;
+}
+
+
+
+.proceed-arrow {
+    font-size: 30px;
+    top: 10px;
+}
+
+
+#usd-ngn{
+right: -26px;
+top: 20px;
+}
+
+/*#go_back{
+visibility: hidden;
+}*/
+
+
+.top_words{
+padding-left: 50px;
+/*padding-top: 80px;*/
+position: absolute;
+text-align: justify;
+left: calc(45% - 246px/2);
+top: 150px;
+}
+
+
+#wall_addr, #id_Account_number, #amnt_dolls, #bank-name, #coin_network, #coin_type, #id_amount {
+    width: 350px;
+    font-size: 14px;
+    height: 55px;
+    border-radius: 12px;
+}
+
+
+
+#id_first_name,#verification_method,#id_username,#id_dob,#id_surname,#id_nin, #profile_image,#id_phone_number,.special_acct_number,#profile_bank_name,#id_email,#id_bvn,.profile-btn{
+width: 100% !important;
+font-size: 14px
+}
+
+
+.select-image{
+top: -46px;
+left: 77%;
+}
+
+
+#profile_bank_name,#verification_method{
+    background-position-x: 94% !important;
+}
+
+
+
+
+.withdrawal_pg {
+    width: 50%;
+}
+
+
+
+label{
+line-height: 13px;
+}
+
+/*#refer-earn-text{
+top: 100px;
+position: absolute;
+padding: 50px;
+}*/
+
+.referral-info {
+    transform: None;
+}
+
+.referral-info-keys{
+left: 30px;
+}
+
+
+.referral-info-values{
+right: 40px;
+}
+
+.support_pg {
+    position: absolute;
+    border-radius: 12px;
+    padding: 28%;
+    padding-top: 6%;
+    width: 55%;
+    max-width: 400px;
+}
+
+.wrd {
+    padding: 15px;
+}
+
+
+.wrd>p,#refer-earn-text{
+font-size: 16px;
+}
+
+input[type="text"], input[type="number"], input[type="email"],input[type=date] {
+    width: 400px;
+    height: 55px;
+    border-radius: 12px;
+}
+
+textarea{
+width: 370px;
+border-radius: 12px;
+}
+
+
+select{
+/*background-position-x: 310px;*/
+background-position-x: 93% !important;
+}
+
+
+/*.button{
+float: right;
+position: relative;
+right: 150px
+width: 200.8px;
+}
+
+
+.support_pg form {
+position: absolute;
+width: 70%;
+top: 10px;
+float: None;
+margin-top: 10px;
+left: 0px;
+padding: 30px;
+top: 100px;
+}*/
+
+
+
+
+.wrapper {
+    width: 40%;
+}
+
+
+
+.withdrawal_pg_form {
+    width: 360px;
+    padding: 50px;
+        padding-top: 50px;
+    padding-top: 0px;
+}
+
+
+
+.submit-prove {
+    left: 50%;
+}
+
+
+.confirmation-btn {
+    left: 23%;
+}
+
+.terms-condition {
+    left: 31%;
+}
+
+#confirm-btn{
+height: 55px;
+}
+
+
+
+.pop-details-div{
+margin-top: 70px;
+}
+
+
+}
+
+
+
+@media screen and  (max-width: 930px){
+
+.greeting {
+    position: inherit !important;
+    margin: auto;
+    margin-top: -23px;
+}
+
+
+.greeting > h2 {
+    position: inherit !important;
+    margin: auto;
+}
+
+.action-btns {
+    float: none;
+    padding: 0;
+    width: 48%;
+    position: inherit !important;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.button {
+    width: 398px;
+}
+
+.order-info {
+    left: 16%;
+}
+
+.submit-proof-form {
+    left: -23%;
+}
+
+.confirmation-btn {
+    left: 23%;
+}
+
+
+.confirmation {
+    left: 0;
+}
+
+.terms-condition {
+    left: 30%;
+}
+
+
+.reveal-warning{
+font-size: 13px;
+}
+}
+
+
+@media screen and  (max-width: 870px){
+.submit-prove {
+    left: 48%;
+}
+
+
+
+}
+
+@media screen and  (max-width : 860px){
+.order-info {
+    left: 14%;
+}
+
+.submit-proof-form {
+    left: -30%;
+}
+
+
+.submit-prove {
+    left: 54%;
+}
+
+.confirmation-btn {
+    left: 31%;
+}
+
+.terms-condition {
+   left: 24%;
+    width: 335px;
+}
+
+#check-btn {
+    left: calc(38% - 246px/2);
+}
+
+.terms-condition {
+    left: 26%;
+    width: 550px;
+}
+
+.terms-sell {
+    left: 24%;
+    /*width: 403px;*/
+}
+
+
+.User-verification{
+max-width: 360px;
+width: 100%;
+}
+
+}
+
+
+
+@media screen and  (max-width:  830px){
+
+.order-info {
+    left: 12%;
+}
+
+.submit-proof-form {
+    left: -33%;
+}
+
+
+
+
+}
+
+
+@media screen and  (max-width: 814px){
+
+.referral-info {
+    left: 11%;
+}
+
+#coin_type,#bank-name{
+    max-width: 360px;
+border-radius: 12px;
+height: 55px;
+}
+
+
+input[type="text"], input[type="number"], input[type="email"],input[type=date],#id_dob,#profile_bank_name,#verification_method,.profile-btn{
+    max-width: 360px;
+border-radius: 12px;
+height: 55px;
+width: 100%;
+}
+
+textarea {
+    width: 84%;
+}
+
+button{
+    height: 55px;
+    width: 92%;
+}
+
+.withdrawl_btn{
+    left: 0px;
+    top: 17%;
+    height: 77px;
+}
+
+
+
+.button{
+    width: 361px;
+}
+
+
+.confirmation {
+    position: absolute;
+    top: 180px;
+    left: calc(35% - 246px/2);
+    width: 360px;
+}
+
+.order-header>h1{
+font-size: 32px;
+}
+
+
+#confirmation-type{
+font-size: 12px;
+line-height: 16px;
+}
+
+
+.order-header {
+    left: 0;
+}
+
+.confirmation>p{
+left: calc(42% - 246px/2);
+}
+
+
+
+.order-header>p{
+font-size: 14px;
+line-height: 19px;
+}
+
+
+
+.order-info{
+width: 400px;
+left: 0px;
+padding: 20px;
+height: 168px;
+}
+
+.order-info-no-memo{
+height: 131px;
+}
+
+.order-info-values > p,.payment_add{
+font-size: 13px;
+}
+
+.order-info-keys {
+font-size: 13px;
+}
+
+
+.order-info-keys,.order-info-values{
+padding: 10px;
+}
+
+
+.submit-proof-form {
+    position: relative;
+    left: calc(45% - 246px/2);
+}
+
+
+
+.submit-prove {
+    left: calc(45% - 246px/2) !important;
+    width: 350px;
+}
+
+#confirm-btn {
+    left: calc(23% - 246px/2);
+    width: 360px;
+    height: 55px;
+    top: 0px;
+    font-size: 16px;
+}
+
+
+
+.confirmation-btn {
+    text-align: match-parent;
+    left: calc(14% - 246px/2);
+    width: 418px;
+    top: 69px;
+}
+
+.confirmation-btn>p{
+height: 48px;
+left: 11px;
+position: relative;
+font-size: 12px;
+margin: 0px;
+}
+
+.terms-condition {
+    width: 335px;
+}
+
+
+.confirmation-msg-buy {
+    width: 400px;
+}
+
+
+#check-btn {
+    width: 12px;
+    height: 12px;
+    left: 19%;
+}
+
+#pasteAcct{
+/*width: 300px*/
+width: 350px;
+height: 55px
+}
+
+
+
+.sell-header>h1{
+line-height: 3px;
+}
+
+.buy-header>h1{
+line-height: 35px;
+}
+
+
+.my-trades > p {
+font-size: 14px;
+}
+
+
+}
+
+
+@media screen and  (max-width: 800px){
+
+
+
+.confirmation > p {
+    width: 65%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+
+
+.image_stat{
+margin: 110px 0 0 0;
+}
+
+.pop-receipt-details{
+flex-direction: column;
+width: 80%;
+margin: auto;
+}
+
+.pop-details-div {
+margin-top: -40px;
+    margin: auto;
+}
+
+
+}
+
+
+@media screen and  (max-width: 750px){
+
+.referral-info {
+    left: 7%;
+}
+
+.support_pg {
+    width: 57%;
+    padding: 21%;
+    padding-top: 4%;
+}
+
+
+.wrapper {
+    width: 50%;
+}
+
+
+.withdrawal_pg_form{
+    padding: 0px;
+}
+
+}
+
+
+@media screen and  (max-width: 700px){
+
+.referral-info {
+    left: 5%;
+}
+
+
+.wrapper {
+    width: 56%;
+}
+
+
+#go_back {
+    color: #828282;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    left: calc(20px - 10px/2);
+    top: 13px;
+    cursor: pointer;
+    background: url('/static/Images/back-arrow.svg') no-repeat center;
+    border: 2px solid #d0cccc00;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 30px;
+    color: aliceblue;
+    visibility: visible;
+    z-index: 13000;
+}
+
+
+
+}
+
+
+@media screen and  (max-width: 650px){
+
+
+.greeting > h2 ,.MyTickets h2{
+    font-size: 30px;
+}
+
+
+.referral-info {
+    width: 86%;
+    height: 209px;
+    top: 200px;
+font-size: 14px;
+}
+
+
+
+.wrapper {
+    width: 62%;
+}
+
+
+textarea {
+    width: 90%;
+}
+
+.top_words{
+top: 168px;
+padding-left: 20px;
+}
+
+.order-form {
+    padding-left: 0px;
+
+}
+
+#usd-ngn {
+    top: 25px;
+}
+
+.submit-proof-form{
+left: calc(44% - 246px/2);
+}
+
+#confirm-btn {
+    left: calc(24% - 246px/2);
+}
+
+
+.unverified-text{
+width: 100%;
+left: 0;
+}
+
+}
+
+@media screen and  (max-width: 590px){
+
+
+.action-bar {
+    position: relative;
+    left: -6px;
+}
+
+.action-btns {
+    max-width: 290px;
+    width: 100%;
+    left: 24%;
+}
+
+#sell-btn,#buy-btn{
+max-width: 137px;
+width: 100%;
+font-size: 18px;
+}
+
+
+.referral-info-keys{
+line-height: 0px;
+}
+
+.referral-info-values{
+line-height: 0px;
+}
+
+
+.support_pg {
+    width: 75%;
+    /*left: calc(27% - 246px/2);*/
+    padding: 15%;
+    left: 0px !important;
+
+}
+
+
+.withdrawl_btn {
+    top: 31%;
+}
+
+
+#id_subject{
+width: 100%;
+max-width: 100%;
+}
+
+#confirm-btn {
+    left: calc(23% - 246px/2);
+}
+
+
+.wrapper {
+    width: 71%;
+}
+
+textarea {
+    width: 93% !important;
+}
+
+.withdrawal_pg {
+    width: 60%;
+}
+
+
+.button{
+    width: 100% !important;
+}
+
+
+
+.referral_text {
+    font-size: 12px;
+    top: 246px;
+}
+
+#terms_and_conditions {
+    width: 460px;
+}
+
+
+}
+
+@media screen and  (max-width: 550px){
+
+
+
+
+.confirmation{
+    left: calc(31% - 246px/2);
+}
+
+.confirmation-btn {
+    left: calc(12% - 246px/2);
+}
+
+
+#confirm-btn {
+    left: calc(26% - 246px/2);
+}
+
+.confirmation-msg {
+    width: 386px;
+}
+
+}
+
+@media screen and  (max-width: 520px){
+
+
+
+.action-btns {
+    left: 22%;
+}
+
+#withdrawl_btn{
+font-size: 14px;
+}
+
+
+.withdrawl_btn {
+    height: 55px;
+    top: 24% !important;
+    font-size: 16px !important;
+    width: 80%;
+}
+
+
+.referral_balance {
+    margin-top: 170px;
+}
+
+.referral_balance>h2{
+font-size: 32px;
+}
+
+.referral_balance>p{
+font-size: 12px;
+}
+
+#separation-bar{
+font-size: larger;
+}
+
+
+#refer-earn-text {
+font-size: 14px !important;
+top: 136px;
+}
+
+.top_words{
+left: calc(49% - 246px/2);
+top: 92px;
+}
+
+
+.order-form{
+top: 186px;
+left: calc(39% - 246px/2);
+}
+
+
+#holder{
+margin-top: 130px;
+}
+
+#msg1>h2{
+font-size: 18px;
+}
+
+#confirmation-success{
+font-size: 12px;
+font-size: 14px;
+}
+
+
+.confirmation-success-btn{
+font-size: 16px !important; 
+}
+.confirmation {
+    width: 100%;
+    left: 0;
+    height: 100%;
+}
+
+
+
+.referral-info{
+top: 253px;
+}
+
+
+.order-header {
+    padding: 0;
+    left: 0 !important;
+}
+
+.confirmation>p {
+    left: 0;
+}
+
+
+.order-info{
+width: 91.5%;
+}
+
+.submit-proof-form {
+    left: 0 !important;
+}
+
+
+.submit-prove {
+   left: 0px !important;
+    width: 354px;
+}
+
+.confirmation-btn {
+width: 319px;
+}
+
+
+.wrapper {
+    width: 81%;
+}
+
+textarea {
+    width: 86%;
+}
+
+
+#buy_btn_form,#sell_btn_form{
+font-size: 32px !important;
+}
+
+
+.terms-condition {
+    font-size: 12px;
+}
+
+
+
+
+.support_pg {
+    width: 87%;
+    padding: 10%;
+}
+
+.withdrawal_pg {
+    padding-top: 30px !important;
+}
+
+
+.select-image{
+left: 72%;
+}
+
+.confirmation-msg {
+    width: 342px;
+}
+
+#terms_and_conditions {
+    max-width: 304px;
+width: 100%;
+}
+
+#terms_and_conditions>h2{
+margin: auto;
+}
+
+#terms_and_conditions_agreement_btn{
+font-size: 16px;
+}
+
+
+#report_txn_form form{
+width: 80%;
+}
+
+}
+
+
+
+@media screen and  (max-width: 495px){
+
+
+.container {
+    left: -5%;
+}
+
+
+.select-image {
+    left: 78%;
+}
+
+
+.image_stat>img{
+width: 96px;
+height: 96px;
+}
+
+.trans_info{
+font-size: 24px;
+line-height: 115%;
+}
+
+
+/*.support_pg {
+    width: 87%;
+    padding: 30px;
+    left: calc(31% - 246px/2);
+}*/
+
+
+label,#equiv_text{
+font-size: 13px !important;
+}
+
+.default-acct-det p{
+    font-size: 13px;
+}
+
+.wrapper {
+    width: 80%;
+}
+
+
+.support_pg {
+    padding: 7%;
+}
+
+.withdrawal_pg {
+    width: 73%;
+}
+
+
+.referral-info{
+height: 203px;
+}
+
+
+textarea {
+    width: 83%;
+}
+
+
+.referral_div_text{
+position: absolute;
+top: 52%;
+padding: 20%;
+left: 0px;
+}
+
+}
+
+
+
+@media screen and  (max-width: 470px){
+
+
+.confirmation {
+    /*left: calc(29% - 246px/2);*/
+}
+
+.submit-proof-form {
+   /* left: calc(46% - 246px/2);*/
+}
+
+.order-info {
+    width: 91%;
+    padding-right: 4%;
+}
+
+
+
+
+#confirm-btn {
+    left: calc(30% - 246px/2);
+}
+
+
+
+
+}
+
+@media screen and  (max-width: 450px){
+
+
+
+.withdrawal_pg {
+    width: 77%;
+}
+
+
+.confirmation {
+    /*left: calc(28% - 246px/2);*/
+}
+
+
+
+}
+
+@media screen and  (max-width:440px)  { 
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+
+
+
+
+/* smartphones, iPhone, portrait 350x600 phones */
+
+
+
+.greeting > h2 ,.MyTickets h2{
+    font-size: 25px;
+}
+
+
+button{
+max-width: 131.8px;
+width: 100%;
+height: 55px;
+}
+
+#proceed,#proceed-sell{
+    width: 300px;
+    height: 55px;
+}
+
+#proceed-sell{
+margin-bottom: 180px;
+}
+
+.logo{
+left: calc(159px - 10px/2);
+}
+
+.action-bar{
+margin-right: 90px;
+padding: 3px;
+}
+
+
+
+
+.action-btns {
+    left: calc(57% - 246px/2);
+    top: -13px;
+}
+
+
+.greeting > h2 {
+    left: 45px;
+}
+
+.my-txns > h3 {
+text-align: left;
+padding-left: 30px;
+}
+
+/*.greeting{
+left: 15%;
+}*/
+
+.empty-txns{
+/*left: calc(20% - 246px/2);*/
+max-width: 100%;
+width: 65%;
+padding: 71px;
+margin: 0;
+}
+
+
+#id_subject{
+/*width: 100%;*/
+}
+
+
+/*.support_pg {
+    padding: 50px;
+}*/
+
+textarea{
+width: 90%;
+}
+
+
+.order-form {
+    width: 70%;
+    top: 160px;
+    padding: 20px;
+}
+
+.order-header {
+   /* left: calc(33% - 246px/2);*/
+}
+
+
+.order-header > h1 {
+    font-size: 33px;
+}
+
+/*#proceed {
+left: 0px;
+}*/
+
+
+#usd-ngn{
+right: 15px;
+top: 29%;
+}
+
+
+#proceed:hover {
+opacity: 0.8;
+background-color: #F08B35;
+}
+
+#proceed-sell{
+left: 0px;
+}
+
+
+#proceed-sell:hover {
+opacity: 0.8;
+background-color: #F08B35;
+}
+
+.terms-sell {
+    left: 26%;
+}
+
+
+.submit-proof-form{
+/*left: calc(42% - 246px/2);*/
+}
+
+.submit-prove {
+   /* left: calc(48% - 246px/2);
+    width: 360px;*/
+}
+
+.confirmation-btn {
+    /*left: calc(25% - 246px/2);
+    width: 300px;
+    top: 75px;*/
+}
+
+#confirm-btn {
+    /*left: calc(54% - 246px/2);
+    width: 352px;*/
+    left: calc(34% - 246px/2);
+    left: 0px !important;
+}
+
+
+.submit-proof-form {
+    left: calc(28% - 246px/2);
+}
+
+.confirmation > p {
+font-size: 14px;
+/*padding-left: 30px;
+*/}
+
+
+.more > h3{
+font-size: 14px;
+}
+
+
+.empty-txns > p {
+    width: 100% !important;
+}
+
+
+.support_pg{
+padding: 6%;
+}
+
+
+.withdrawal_pg {
+    width: 100%;
+    padding: 57px;
+}
+
+
+.withdrawal_pg > #id_amount{
+    width: 100%;
+}
+
+/*.support_pg form {
+position: absolute;
+left: 11%;
+}*/
+
+
+
+.terms-condition {
+    font-size: 12px;
+    width: 319px;
+}
+
+
+
+#wall_addr,#id_Account_number,#amnt_dolls,#bank-name,#coin_network,#coin_type,#id_amount{
+width: 300px;
+height: 55px;
+}
+
+input[type="text"],input[type="number"],input[type="email"]{
+/*width: 350px;*/
+font-size: 14px;
+}
+
+
+.button {
+    height: 55px;
+    width: 100%;
+}
+
+
+select{
+background-position-x: 260px;
+}
+
+
+
+textarea{
+/*width: 350px;*/
+width: 90%;
+font-size: 14px;
+}
+
+.withdrawal_pg {
+    width: 100%;
+    padding: 0px;
+}
+
+
+.withdrawal_pg_form > input[type="number"]{
+    width: 100%;
+}
+
+
+.confirmation {
+/*position: absolute;*/
+/*top: 100px;*/
+/*left: calc(31% - 246px/2);
+max-width: 360px;
+width: 100%*/
+}
+
+/*#pasteAcct{
+width: 300px;
+}*/
+
+.confirmation-btn > p {
+width: 328px;
+}
+
+
+.order-info {
+   /* width: 100%;*/
+}
+
+
+/*.order-info-values {
+    font-size: 14px;
+    padding-right: 20px;
+}*/
+
+.order-info-values {
+    font-size: 14px;
+    padding-right: 20px;
+    right: 0px;
+    position: relative;
+    line-height: 5px;
+    /*padding-top: 4px;*/
+}
+
+.order-info-keys {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 0px;
+}
+
+.referral-info {
+    top: 290px;
+    width: 95%;
+    left: 0 !important;
+    position: absolute;
+}
+
+#refer-earn-text {
+}
+
+.wrapper {
+    position: absolute;
+    width: 88%;
+   margin-left: 10%;
+
+}
+
+
+
+
+.select-files {
+    right: 27px;
+    top: 25px;
+}
+
+.payment_add {
+    width: 165px;
+}
+
+#ref_withdrawl_btn {
+    height: 55px;
+}
+
+
+.withdrawal_pg_form {
+    width: 300px;
+    padding: 14%;
+    padding-top: 1% !important;
+}
+
+
+.referral_div_text{
+top: 250px;
+}
+
+
+.display-rate{
+font-size: 12px;
+left: 0%;
+}
+
+
+.info-tag{
+max-width: 76px;
+height: 76px;
+}
+
+
+}
+
+
+@media screen and  (max-width: 416px){
+
+
+
+.wrapper {
+    margin-left: 7%;
+}
+
+
+
+.action-bar {
+    left: 3px;
+}
+
+
+
+
+
+
+#usd-ngn {
+
+    right: 0px;
+}
+
+
+
+.withdrawal_pg_form {
+    width: 300px;
+}
+
+
+.submit-proof-form {
+    left: calc(30% - 246px/2);
+}
+
+
+
+.terms-condition {
+    left: 26%;
+}
+
+#confirm-btn {
+    left: calc(37% - 246px/2);
+}
+
+
+.top_words {
+    left: calc(49% - 246px/2);
+}
+
+
+}
+
+@media screen and  (max-width:400px)  {
+
+
+.select-image {
+    left: 75%;
+}
+
+
+.order-info{
+padding: 17px;
+}
+
+
+.submit-proof-form {
+    left: calc(32% - 246px/2);
+}
+
+
+#confirm-btn {
+    left: calc(39% - 246px/2);
+}
+
+.support_pg {
+    padding: 5%;
+}
+
+
+.withdrawal_pg_form {
+    padding: 12%;
+}
+
+
+}
+
+
+@media screen and  (max-width:390px)  {
+
+
+
+#usd-ngn {
+    right: -10px;
+    top: 25%;
+}
+
+
+.order-info{
+    padding-left: 16px;
+}
+
+#confirm-btn {
+    left: calc(40% - 246px/2);
+}
+
+.wrapper {
+    margin-left: 6%;
+}
+
+}
+
+
+
+@media screen and  (max-width:385px)  { 
+
+.more > h3{
+    font-size: 12px;
+}
+
+
+.button {
+   /* width: 300px;*/
+}
+
+
+.errorlist{
+    position: relative;
+    /*top: -22px;*/
+    font-size: 12px;
+    color: red;
+}
+
+.order-header {
+    left: calc(27% - 246px/2);
+}
+
+.order-form {
+    left: 19px;
+}
+
+
+#usd-ngn {
+    right: -18px;
+}
+
+.confirmation {
+    left: 0px;
+   /* max-width: 365px;*/
+}
+
+/*.submit-proof-form {
+    top: 495px;
+}*/
+
+
+.confirmation > p {
+
+    font-size: 14px;
+    padding-left: 0px;
+    left: 0px;
+
+}
+
+
+.submit-proof-form {
+    left: calc(42% - 246px/2);
+}
+
+
+#confirm-btn {
+    left: calc(34% - 246px/2);
+}
+
+
+.greeting > h2 {
+    left: 35px;
+}
+
+
+.action-btns {
+    top: -13px;
+    width: 300px;
+}
+
+
+.terms-condition {
+    left: 26%;
+}
+
+.order-info {
+    left: 0px !important;
+    padding: 16px;
+}
+
+.submit-prove {
+    left: calc(49% - 246px/2);
+}
+
+.confirmation-btn {
+    left: calc(30% - 246px/2);
+}
+
+
+.order-info-values {
+    /*line-height: 6px;*/
+}
+.confirmation-msg {
+    left: -13%;
+}
+
+
+#id_amount{
+width: 300px;
+}
+
+#ref_withdrawl_btn {
+    height: 55px;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+
+.wrd {
+    padding: 0px;
+}
+
+
+.wrd-support{
+/*padding-left: 38px;*/
+}
+
+
+.support_pg form {
+    padding-left: 50px;
+}
+
+.empty-txns {
+    width: 72%;
+    padding: 53px;
+}
+
+.withdrawal_pg_form {
+    padding: 10%;
+}
+
+
+
+
+}
+
+
+
+@media screen and  (max-width: 380px){
+.display-rate {
+    left: 15%;
+}
+}
+
+@media screen and  (max-width: 375px){
+
+
+
+.order-form {
+    left: 5%;
+}
+
+
+.submit-prove {
+    left: calc(54% - 246px/2);
+    width: 315px;
+}
+
+
+
+.submit-proof-img-txt{
+width: 100% !important;
+}
+
+
+
+.terms-condition {
+    font-size: 12px;
+    /*width: 300px;*/
+}
+
+.confirmation-msg {
+    width: 320px;
+}
+
+
+#confirm-btn {
+    left: calc(37% - 246px/2);
+    width: 315px;
+}
+
+
+.withdrawal_pg_form {
+    padding: 9%;
+}
+
+
+
+}
+
+@media screen and (max-width:365px)  { 
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+
+.logo {
+    left: calc(132px - 10px/2);
+}
+
+.action-bar {
+    margin-right: 71px;
+}
+
+
+.action-btns {
+
+    top: 8px;
+    /*width: 272px;
+    left: calc(60% - 246px/2);*/
+    left: calc(52% - 246px/2);
+
+}
+
+
+
+
+.greeting {
+    left: 0px;
+    position: relative;
+    top: 10px;
+    line-height: 30px;
+    max-width: 300px;
+}
+
+
+input[type="email"] {
+    width: 100%;
+    font-size: 14px;
+}
+
+
+
+.empty-txns {
+left: calc(15% - 246px/2);
+    width: 75%;
+    padding: 48px;
+}
+
+
+.order-form {
+    width: 70%;
+    left: 5px;
+}
+
+.top_words {
+    left: 17%;
+}
+
+
+
+#usd-ngn{
+position: absolute;
+right: -30px;
+/*top: 20px;*/
+}
+
+
+.submit-proof-form {
+    left: calc(34% - 246px/2);
+}
+
+
+.order-info-keys {
+    /*line-height: 10px;*/
+}
+
+.order-info {
+    padding: 15px;
+}
+
+.confirmation > p {
+    font-size: 11px;
+    padding-left: 0px;
+    left: 0px;
+}
+
+#pasteAcct {
+    width: 100%;
+}
+
+
+.submit-prove {
+    left: calc(55.5% - 246px/2);
+    width: 300px;
+}
+
+.confirmation-btn > p {
+    width: 100%;
+    font-size: 11px;
+    text-align: left;
+}
+
+.confirmation-btn {
+    left: calc(25% - 246px/2);
+}
+
+
+.terms-condition {
+    /*width: 277px;*/
+}
+
+
+.confirmation-msg {
+    left: 3%;
+    position: relative;
+}
+
+
+#confirm-btn {
+    left: calc(44% - 246px/2);
+    width: 308px;
+}
+
+
+.confirm-sell-btn{
+top: 186px;
+}
+
+
+
+
+.button {
+float: inherit;
+}
+
+textarea{
+width: 270px;
+}
+
+
+
+input[type="text"],input[type="number"]{
+width: 300px;
+}
+
+
+#id_first_name,#id_surname,#id_phone_number,#id_bvn,#id_nin{
+width: 100%;
+max-width: 100%;
+}
+
+.wrapper {
+    margin-left: 5%;
+}
+
+.more{
+width: 100%;
+display: block;
+font-size: 2px;
+}
+
+
+.wrd {
+    /*width: 317px;*/
+}
+
+.support_pg form {
+    padding-left: 30px;
+}
+
+
+.withdrawal_pg_form {
+    padding: 8%
+}
+
+
+.wrd {
+    /*width: 300px;*/
+    padding: 0px;
+}
+
+.wrd-support{
+    padding-top: 40px;
+}
+
+
+.order-info-values{
+    padding-right: 10px;
+}
+.order-info-keys{
+padding-left: 10px;
+}
+
+
+}
+
+
+@media screen and (max-width:350px)  { 
+/*smaller screen phones like iphone 5*/
+
+button {
+width: 101.8px;
+}
+
+
+.action-bar {
+    margin-right: 61px;
+    padding: 3px;
+}
+
+
+/*.action-btns {
+width: 215.8px;
+}*/
+
+.referral-info {
+    font-size: 16px;
+    /*top: 180px;*/
+    height: 200px;
+}
+
+.withdrawl_btn {
+    top: 250px;
+}
+
+#refer-earn-text {
+}
+
+.wrd {
+   /* width: 280px;*/
+}
+
+.wrd > p {
+font-size: 14px;
+}
+
+
+.wrd-support > p {
+    font-size: 16px;
+}
+input[type="text"],input[type="number"],input[type="email"]{
+width: 298px;
+}
+
+textarea {
+   /* width: 218px;*/
+}
+
+.button {
+    width: 298px;
+}
+
+.top_words {
+    /*left: 10%;*/
+}
+
+
+#usd-ngn {
+font-size: 16px;
+}
+
+.support_pg form {
+    padding-left: 26px;
+}
+
+
+
+.greeting {
+    left: calc(50% - 246px/2);
+    top: 0px;
+}
+
+
+.action-btns {
+    top: -13px;
+}
+
+.greeting > h2 ,.MyTickets h2{
+    left: 0;
+    font-size: 25px;
+}
+
+
+/*.action-btns{
+    left: calc(67% - 246px/2);
+}*/
+
+#Bogt {
+    font-size: 13px;
+}
+
+
+.order-stamp > h3 {
+    font-size: 12px;
+}
+
+.more > h3{
+    font-size: 12px;
+}
+
+/*.confirmation{
+width: 320px;
+}*/
+
+.order-header {
+    left: calc(33% - 246px/2);
+}
+
+
+.order-info-keys {
+    padding-left: 10px;
+}
+
+.order-info-values {
+    padding-right: 10px;
+}
+
+.submit-proof-form {
+    left: calc(43.4% - 246px/2);
+}
+
+
+.order-info {
+   padding: 20px;
+}
+
+.submit-prove {
+    left: calc(59% - 246px/2);
+}
+
+.confirmation-btn {
+    left: calc(25% - 246px/2);
+}
+
+#confirm-btn {
+    left: calc(54% - 246px/2);
+    width: 298px;
+}
+
+
+.empty-txns > img {
+    width: 230px;
+}
+
+.empty-txns > img {
+    width: 230px;
+}
+
+.empty-txns > p {
+    width: 230px;
+}
+
+
+/*.wrapper {
+    width: 78%;
+}*/
+
+
+
+
+.withdrawal_pg_form {
+    padding: 7%;
+}
+
+.referral-info-keys>p,.referral-info-values>p{
+font-size: 13px;
+}
+
+
+.order-info-values{
+    padding-right: 0px;
+}
+.order-info-keys{
+padding-left: 0px;
+}
+
+
+}
+
+
+@media screen and  (max-width: 340px){
+.support_pg form {
+    padding-left: 20px;
+}
+
+
+
+.order-info {
+    padding: 5%;
+}
+
+.order-form {
+    left: -5px;
+}
+
+
+}
+
+
+@media screen and  (max-width: 337px){
+.coming-soon-img{
+left: -99px;
+}
+
+}
+
+
+@media screen and  (max-width: 330px){
+
+.action-btns {
+   /* width: 200px;
+    left: calc(70% - 246px/2);*/
+left: calc(50% - 246px/2);
+}
+
+#sell-btn, #buy-btn {
+    width: 100%;
+}
+
+.top_words {
+    left: 13%;
+}
+
+#usd-ngn {
+    right: -52px;
+    top: 22px;
+}
+
+#refer-earn-text {
+    font-size: 20px;
+}
+
+.referral-info {
+    font-size: 11px;
+}
+
+
+.order-info {
+    width: 88%;
+}
+
+.submit-proof-form {
+    left: calc(39.4% - 246px/2);
+}
+
+
+.withdrawal_pg_form {
+    padding: 4%;
+}
+
+.support_pg {
+    width: 100%;
+    left: -9px;
+}
+
+
+.button {
+    width: 100%;
+}
+
+
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 100%;
+}
+
+
+.withdrawl_btn {
+    top: 41% !important;
+}
+
+}
+
+
+@media screen and  (max-width: 320px){
+
+
+
+.greeting > h2 {
+    left: 35px;
+}
+
+
+#sell-btn, #buy-btn {
+    width: 90px;
+    float: none;
+}
+
+
+#refer-earn-text {
+font-size: 17px;
+}
+
+
+.wrapper {
+    margin-left: 11%;
+}
+
+
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 250px;
+}
+
+.button {
+    width: 250px;
+}
+
+
+.order-form {
+width: 88%;
+}
+
+#wall_addr, #id_Account_number, #amnt_dolls, #bank-name, #coin_network, #coin_type, #id_amount {
+    width: 100%;
+}
+
+
+#usd-ngn {
+    top: 21px;
+    right: 20px;
+}
+
+
+.submit-proof-form {
+    left: calc(38.4% - 246px/2);
+}
+
+.withdrawal_pg_form {
+    padding: 2%;
+}
+
+textarea {
+    width: 218px;
+}
+
+
+select {
+    background-position-x: 93%;
+}
+
+
+.support_pg {
+    padding: 12px;
+}
+
+
+.wrd-support {
+    /*padding-left: 10px;*/
+}
+
+.order-info {
+    width: 83%;
+}
+
+.submit-prove {
+    left: calc(55% - 246px/2);
+}
+
+#confirm-btn {
+    left: calc(50% - 246px/2);
+    width: 296px;
+}
+
+#proceed, #proceed-sell {
+    width: 100%;
+}
+
+
+.referral-info-keys {
+    padding-left: 0px;
+}
+
+.payment_add {
+    width: 110px;
+}
+
+.display-rate {
+    left: 0%;
+}
+
+}
+
+@media screen and  (max-width: 270px){
+
+
+.logo {
+    left: calc(83px - 10px/2);
+}
+
+
+.action-bar {
+    margin-right: 35px;
+    padding: 3px;
+}
+
+
+.wrd {
+    /*width: 200px;*/
+}
+
+#id_subject {
+    width: 100%;
+}
+
+textarea {
+    width: 85%;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 100%;
+}
+
+.wrapper {
+    width: 77%;
+}
+
+
+.button {
+    width: 100%;
+}
+
+.submit-prove {
+    width: 239px;
+}
+
+
+.terms-condition {
+    width: 237px;
+    font-size: 9px;
+}
+
+#confirm-btn {
+    left: calc(52% - 246px/2);
+    width: 242px;
+}
+
+#refer-earn-text {
+    font-size: 16px;
+}
+
+.button {
+    width: 227px;
+}
+
+}
