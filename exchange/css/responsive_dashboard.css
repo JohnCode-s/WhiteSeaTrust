@@ -166,7 +166,6 @@ font-size: 12px;
 display: block;
 }
 
-
 nav{
 background: black;
 height: 100vh;
@@ -233,7 +232,7 @@ width: 4px;
      border-radius: 1px;
      height: 3px;
      width: 30px;
-     background: #ffffff;
+     background: white;
      position: absolute;
      display: block;
      content: '';
@@ -252,7 +251,7 @@ width: 4px;
      bottom: -10px;
 }
  #navbar-toggle.active span {
-     background-color: transparent;
+     background-color: black;
 }
  #navbar-toggle.active span:before, #navbar-toggle.active span:after {
      top: 0;
@@ -329,7 +328,7 @@ font-weight: 500;
 
 
 #check-btn{
-webkit-appearance: none;
+   -webkit-appearance: none;
 }
 
 #go_back{
@@ -368,8 +367,6 @@ margin-top: 25px;
 width: 100%;
 right: 46px;
 
-position: relative;
-top: 28px;
 padding-right: 30px;
 padding-left: 30px;
 }
@@ -383,8 +380,7 @@ position: relative;
 .greeting {
 float: none;
 text-align: None;
-position: absolute;
-left: 5%;
+
 }
 
 
@@ -734,8 +730,8 @@ margin-top: 70px;
 @media screen and  (max-width: 930px){
 
 .greeting {
-    position: inherit !important;
-    margin: auto;
+    /* position: inherit !important; */
+    margin-bottom: 5px;
     margin-top: -23px;
 }
 
@@ -748,8 +744,7 @@ margin-top: 70px;
 .action-btns {
     float: none;
     padding: 0;
-    width: 48%;
-    position: inherit !important;
+    /* position: inherit !important; */
     margin: auto;
     margin-top: 24px;
 }
@@ -1187,20 +1182,25 @@ left: 0;
 
 @media screen and  (max-width: 590px){
 
-
-.action-bar {
+header #signupBtn{
+    display: block;
+}
+/* .action-bar {
     position: relative;
     left: -6px;
-}
+} */
 
 .action-btns {
     max-width: 290px;
     width: 100%;
-    left: 24%;
+    /* left: 24%; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #sell-btn,#buy-btn{
-max-width: 137px;
+max-width: 200px;
 width: 100%;
 font-size: 18px;
 }

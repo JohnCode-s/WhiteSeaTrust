@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root{
+  --primary-blue: #0b0b41;
+}
 * {
   outline: none;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-theaderp-highlight-color: transparent;
   font-family: Poppins;
 }
 
 body {
-  background-color: white;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -42,17 +45,59 @@ a {
 }
 
 header {
+  background-image: url(../../assets/image/project.jpg);
+  background-position: left;
+  background-size: 250px;
+  /* background-origin: border-box; */
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px, 10%;
-  background-color: black;
-  border-radius: 0 0 18px 18px;
-  height: 80px;
+  background-color: var(--primary-blue);
+  /* border-radius: 0 0 18px 18px; */
+  height: 120px;
   position: fixed;
   width: 100%;
   z-index: 13000;
   top: 0;
+}
+.exchange{
+  width: 100%;
+  height: 100px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: var(--primary-blue);
+  color: white;
+  font-size: 30px;
+  font-family: 'serif';
+  margin-top: 120px;
+
+}
+
+.exchange h4,
+.exchange p{
+  margin: 0;
+}
+.exchange p{
+  font-size: 15px;
+  margin-top: 10px;
+  color: grey;
+}
+.exchange h4{
+  font-size: 28px;
+  padding-top: 10px;
+}
+
+header #signupBtn{
+  background-color: #6565a0;
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  display: none;
 }
 
 .nav-mobile {
@@ -220,46 +265,62 @@ a {
 
 .my-action-bar {
   text-align: center;
-  margin-top: 140px;
+  width: 100%;
+  height: 200px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  background-color: white;
 }
 
 .greeting > h2 {
-  color: #1a1a1a;
+  color: var(--primary-blue);
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 42px;
-  left: 100px;
-  position: absolute;
+  margin: 5px;
+  /* left: 100px;
+  position: absolute; */
 }
 
-.greeting {
+/* .greeting {
   float: left;
-}
+} */
 
 /*Start of button CSS*/
 .action-btns {
-  position: relative;
-  max-width: 395.8px;
-  width: 100%;
-  height: 77px;
-  right: 100px;
-  top: 12px;
-  text-align: inherit;
-  float: right;
+  /* position: relative; */
+  display: flex;
+  max-width: 400px;
+  /* width: 100%; */
+  /* height: 77px; */
+  /* right: 50%; */
+  /* margin-right: -200px; */
+  /* bottom: 0; */
+  text-align: center;
+  /* float: right; */
 }
 
 .action-btns > button {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 7px;
+  color: white;
+  background: linear-gradient(to right , var(--primary-blue) 0%, #6565a0 50%, var(--primary-blue) 100%);
   line-height: 120%;
 }
 
 button {
-  max-width: 191.8px;
-  height: 77px;
+  max-width: 200px;
+  height: 60px;
   top: 21px;
   border-radius: 12px;
   border: 1px solid #828282;
@@ -276,7 +337,6 @@ button:hover {
 
 #buy-btn {
   float: right;
-  background-color: white;
   position: relative;
   top: 0px;
   width: 100%;
@@ -300,7 +360,6 @@ button:hover {
 
 #sell-btn {
   float: left;
-  background-color: #f08b35;
   border: 0px;
   color: white;
   width: 100%;
@@ -1698,4 +1757,31 @@ NACBOTICS COPY FROM HERE
 #resolved_ticket_pop,
 #pending_ticket_pop {
   display: none;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+  background-color: var(--primary-blue);
+  font-size: .5rem;
+  color: white;
+  /* margin-top: 20px; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer .box{
+  height: 120px;
+  flex: 1;
+  text-align: left;
+}
+footer .img-box{
+  background-image: url(../../assets/image/project.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

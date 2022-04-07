@@ -16,11 +16,11 @@
     />
     <title>Dashboard</title>
   </head>
-  <body style="overflow-x: hidden; height: 100%">
+  <body style="height: 100vh">
     <div class="body-container">
       <div class="shadow removeEffect"></div>
       <header>
-        <a href="/"><img class="logo" src="../assets/image/project.jpg" /></a>
+        <a href="/"><img class="logo" src="" /></a>
         <nav class="slide-content" id="sidebar-nav">
           <ul class="nav_links">
             <li style="position: relative">
@@ -42,28 +42,62 @@
         <div class="nav-mobile" onclick="HideMenu()">
           <a id="close-ico" href="#" class="close-nav"></a>
         </div>
+        <a id="signupBtn" href="#" role="button">Sign Up/Login</a>
       </header>
+      <div class="exchange">
+        <h4>EXCHANGE FOR YOU!</h4>
+        <p>Trade it yourself, anytime, anywhere</p>
+      </div>
 
       <div class="my-action-bar">
-        <div class="greeting">
-          <!-- <h2>Welcome, Ifeanyichukwu</h2> -->
-          <h2><span id="user-grees">Welcome,</span> John</h2>
+
+          <div class="greeting">
+          <h2><span id="user-grees">What do you have to trade?</h2>
         </div>
 
         <div class="action-btns">
-          <button
-            id="sell-btn"
-            onclick="window.location.href='#';"
-          >
-            Sell
+          <button id="sell-btn" onclick="window.location.href='#';">
+            Trade Crypto
           </button>
           <button id="buy-btn" onclick="window.location.href='#';">
-            Buy
+            Trade Giftcards
           </button>
         </div>
+  
       </div>
-
-      <div class="txn-history">
+      <footer>
+        <div class="box img-box"></div>
+        <div class="box">
+          <h4>ABOUT</h4>
+          <p>Company</p>
+          <p>Carrers</p>
+          <p>Press</p>
+        </div>
+        <div class="box">
+          <h4>RESOURCES</h4>
+          <p>Bitcoin price</p>
+          <p>Discover</p>
+          <p>Help Center</p>
+          <p>Status</p>
+        </div>
+        <div class="box">
+          <h4>PRODUCTS</h4>
+          <p>Featured</p>
+          <p>Fees</p>
+          <p>Exchange</p>
+          <p>Busines</p>
+        </div>
+        <div class="box">
+          <h4>LEGAL</h4>
+          <p>Terms of use</p>
+          <p>Customer Protection</p>
+          <p>Legal & Compliance</p>
+          <p>Privacy Policy</p>
+          <p>Security</p>
+        </div>
+        
+      </footer>
+      <!-- <div class="txn-history">
         <div class="my-txns">
           <h3>Transaction History</h3>
 
@@ -73,7 +107,7 @@
             <p>Don’t just make this place look empty. Trade!!</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- <div id="report_txn_form" class="pop-receipt">
