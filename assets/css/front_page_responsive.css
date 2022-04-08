@@ -1,0 +1,77 @@
+@media screen and (max-width: 670px) {
+  .bitcoin_price,
+  .exchange {
+    display: none;
+  }
+  .link_container {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .link_container {
+    display: none;
+  }
+  .large_container{
+    padding: 3rem 2rem !important;
+  }
+  .intro_container{
+    padding-top: 2rem;
+  }
+
+  .btn_container{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+
+  .btn_container > a{
+    width: 80% !important;
+    margin-top: 8px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .fixed_left {
+    position: static !important;
+    justify-content: center;
+    /* height: 80%; */
+     align-items: center;
+  }
+
+  .fixed_left div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    /* margin-top: 4rem; */
+  }
+  .fixed_left div img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .intro_title {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .intro_subtitle{
+     line-height: 2rem;
+  }
+
+  .btn_container {
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .fixed_left{
+    position: fixed;
+    right: 5rem;
+    bottom: 2rem;
+  }
+}
