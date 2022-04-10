@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     },
-    { root: null, threshold: [0] }
+    { root: null, threshold: 0 }
   );
 
 
