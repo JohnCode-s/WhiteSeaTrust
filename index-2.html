@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="assets/fontawesome-6/css/all.css" />
     <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/front_page_responsive.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
     <link rel="stylesheet" href="assets/css/style-2.css" />
+    <script src="assets/js/aosAnimation.js"></script>
     <title>Home</title>
   </head>
   <body style="height: 100vh;">
@@ -130,10 +132,11 @@
     </nav>
 
     <!-- * Page Body -->
-    <div class="container-fluid container-lg h-100" style="margin-top: 70px;">
+    <div class="container-fluid main_container container-lg h-100" style="margin-top: 70px;">
+        <!-- ? Intro Section -->
         <div class="row intro_container">
             <!--! Scrolling Container in large screen -->
-            <div class="col-md-7 col-sm-12 large_container">   
+            <div class="col-md-6 col-lg-7 col-sm-12 large_container">   
                 <div class="text-start d-flex justify-content-between align-content-around flex-column">
                     <h2 class="intro_title">
                         Cryptocurrency is for everyone
@@ -152,15 +155,55 @@
                 </div>
             </div>
             <!--! fixed container in large screen -->
-            <div class="col-md-3 fixed_left">
-                <div>
-                    <img class="img-fluid" style="width: 100%;" src="assets/image/phone-screen-1.png" alt="">
+            <div class="col-md-4 fixed_left">
+                <div data-aos="zoom-in-left" data-aos-delay="200">
+                    <img class="img-fluid" src="assets/image/phone-screen-1.png" alt="Mobile Device">
+                </div>
+            </div>
+        </div>
+        <!-- ? Sign Up Section -->
+        <div class="row intro_container ">
+            <!--! Scrolling Container in large screen -->
+            <div class="col-md-6 observer first col-sm-12 signup_container">   
+                <div class="text-start">
+                    <h2 class="signup_title">
+                        Sign Up for free
+                    </h2>
+                </div>
+            </div>
+            <!--! fixed container in large screen -->
+            <div class="col-md-4 fixed_left">
+                <div class="img" id="first" data-aos="zoom-in-left" data-aos-delay="200">
+                    <img class="img-fluid" src="assets/image/phone-screen-2.png" alt="Mobile Device" >
+                </div>
+            </div>
+        </div>
+
+        <div class="row intro_container ">
+            <!--! Scrolling Container in large screen -->
+            <div class="col-md-6 observer second col-sm-12 signup_container">   
+                <div class="text-start">
+                    <h2 class="signup_title">
+                        Sign Up for free
+                    </h2>
+                </div>
+            </div>
+            <!--! fixed container in large screen -->
+            <div class="col-md-4 fixed_left">
+                <div class="img" id="second" data-aos="zoom-in-left" data-aos-delay="200">
+                    <img class="img-fluid" src="assets/image/phone-screen-3.png" alt="Mobile Device" >
                 </div>
             </div>
         </div>
     </div>
 
     <!-- * scripts -->
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
     <script src="assets/bootstrap-5/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

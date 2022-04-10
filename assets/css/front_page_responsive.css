@@ -13,10 +13,6 @@
   .link_container {
     display: none;
   }
-
-  .large_container div{
-    /* padding: 1rem; */
-  }
   
   .intro_container{
     padding-top: 2rem !important;
