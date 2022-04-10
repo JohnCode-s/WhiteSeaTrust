@@ -4,16 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
   let targets = document.querySelectorAll(".observer");
   
 
-  imagesDiv.forEach((div) => {
-    div.classList.add("hide");
-  });
-
+  if (getWidth() > 767) {
+    imagesDiv.forEach((div) => {
+      div.classList.add("hide");
+    });
+  } else {
+    console.log("Not Running");
+  }
+  
   function show(target) {
     const targetClass = target.getAttribute("class").split(" ")[2];
     //   now target that specific section
     const curSection = document.querySelector(`#${targetClass}`);
     curSection.parentNode.classList.add("fixed_left");
-    curSection.classList.remove('hide');
+    if (curSection.classList.contains('hide')) {
+      curSection.classList.remove("hide");
+    }else{
+      curSection.classList.add("hide");
+    }
   }
 
   function hide(target) {
@@ -21,7 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     //   now target that specific section
     const curSection = document.querySelector(`#${targetClass}`);
     curSection.parentNode.classList.remove("fixed_left");
-    curSection.classList.add('hide');
+    if (curSection.classList.contains("hide")) {
+      curSection.classList.remove("hide");
+    } else {
+      curSection.classList.add("hide");
+    }
   }
 
   let observer = new IntersectionObserver(
