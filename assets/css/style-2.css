@@ -40,7 +40,7 @@ body {
   font-family: Greycliff, Helvetica Neue, Helvetica, Arial, sans-serif;
   width: 100vw;
   margin: 0;
-  background-color: var(--color-secondary-background);
+  background-color: var(--color-secondary-background-lighter);
   overflow-x: hidden;
 }
 .navbar {
@@ -111,7 +111,7 @@ body {
 
 .intro_container {
   height: 100%;
-  padding-top: 4rem;
+  padding-top: 4rem !important;
   justify-content: space-between !important;
    position: relative;
   
@@ -150,20 +150,37 @@ body {
 
 
 /* ==========Sign up Section============== */
-
-.signup_title{
-  width: 80%;
-  background-color: #071278;
-  padding: 4rem 2rem;
+.title_box{
+width: 80%;
+ padding: 4rem 2rem;
   color: var(--color-neutral-0);
+  border-top-right-radius: 2.5rem;
+}
+.signup_title{
+  background-color: var(--color-secondary-darker);
+}
+
+.sell_title{
+  background-color: var(--color-secondary-darker);
+}
+
+.explore_title{
+  background-color: var(--color-secondary);
+}
+
+.investment_title{
+  background-color: var(--color-tertiary);
 }
 
 .signup_container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
+.signup_container div{
+  width: 100%;
+}
 /* show class for image */
 
 .hide{
