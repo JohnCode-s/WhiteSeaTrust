@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const imagesDiv = document.querySelectorAll(".img");
   let targets = document.querySelectorAll(".observer");
   
-
   if (getWidth() > 767) {
     imagesDiv.forEach((div) => {
       div.classList.add("hide");
@@ -17,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     //   now target that specific section
     const curSection = document.querySelector(`#${targetClass}`);
     curSection.parentNode.classList.add("fixed_left");
-    if (curSection.classList.contains('hide')) {
+    //if (curSection.classList.contains('hide')) {
       curSection.classList.remove("hide");
-    }else{
-      curSection.classList.add("hide");
-    }
+    //}else{
+    //  curSection.classList.add("hide");
+   // }
   }
 
   function hide(target) {
@@ -73,5 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Not Running');
   }
   
-
+  const nav = document.querySelector(".navbar");
+ 
+  window.onscroll = function () {
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+      nav.classList.add('white');
+      document.querySelector(".logo").classList.add("blue");
+      document.querySelectorAll(".color").forEach((btn) => {
+        btn.classList.add('blue');
+      });      
+    } else {
+      nav.classList.remove('white');
+      document.querySelector(".logo").classList.remove('blue');
+       document.querySelectorAll(".color").forEach((btn) => {
+         btn.classList.remove('blue');
+       });
+    }
+  }
 });

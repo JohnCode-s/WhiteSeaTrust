@@ -44,18 +44,36 @@ body {
   overflow-x: hidden;
 }
 .navbar {
-  background-color: var(--color-neutral-0);
+  background-color: var(--color-primary);
   height: 70px;
 }
 
-.navbar a {
-  color: var(--color-primary);
+
+.sign_up_btn {
+  background-color: var(--color-tertiary);
+  border-radius: 30px;
+  padding: 15px;
+  color: var(--color-neutral-0) !important;
+  text-transform: uppercase;
 }
 
-.sign_in_btn {
-  background-color: var(--color-secondary);
-  border-radius: 30px;
-  padding: 8px;
+.anchor_btn{
+    outline: none !important;
+    border-style: none !important;
+    border: none;
+    color: var(--color-neutral-0) !important;
+  padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.white{
+  background-color: var(--color-neutral-0);
+}
+
+.blue{
+  color: var(--color-primary) !important;
 }
 
 .sidebar_title {
